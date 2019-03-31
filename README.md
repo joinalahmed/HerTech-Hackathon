@@ -21,8 +21,9 @@ a safety index. We define a set of negative and positive features to come up wit
 stations, gas stations, hospitals contribute as positive features. The number of accidents, crime rate,etc would contribute to 
 negative features. We intend to use as much real-time data and hence are picking these feature attributes with Google map API's. 
 Once we have safety index calculated for all the intermediate points, we sum them up with user-defined weights for each feature 
-and calculate a safety score for the whole route. Similar calculations are performed for all the suggested routes and the route
-with highest safety score is suggested to the user to be the safest.
+and calculate a safety score for the whole route. Similar calculations are performed for all the suggested routes. The route
+with highest safety score is suggested to the user to be the safest and displayed in green to the user. Rest of the routes 
+are also displayed, but red in color.
 
 Phase 2: As we roll out Phase 1, we ask users for their feedback. This feedback is incorporated into the system. For e.g., we 
 assume that a petrol bunk is a positive feature. But if there is a petrol bunk which was unsafe for a user when she approached, 
